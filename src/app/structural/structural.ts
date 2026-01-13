@@ -18,7 +18,7 @@ export class Structural {
 
   userrole: string = ""
 selected = true
-back = "rgb(45, 160, 122)"
+back = "rgb(45, 160, 122)" 
 
   togglebutton(){
     this.selected = !this.selected
