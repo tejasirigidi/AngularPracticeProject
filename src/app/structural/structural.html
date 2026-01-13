@@ -1,0 +1,37 @@
+<p>structural works!</p>
+
+@if(a>b){
+    {{a}} is greater than {{b}}
+    @for(item of items; track item){
+    <div>{{item}}</div>
+}
+}@else {
+    {{b}} is greater than {{a}}
+}
+
+@switch(userrole){
+    @case("admin"){
+        <div> role is admin</div>
+    }
+    @case("manager"){
+        <div> role is manager</div>
+    }
+    @default {
+        <div> default is user</div>
+    }
+}
+
+
+<div [ngClass]="{'active' : selected, 'inactive' : !selected}">
+    class name toggle
+</div>
+
+<button (click) = togglebutton()>change class</button>
+
+<div [ngStyle]="{'background-color':  back}" >
+    style name toggle
+</div>
+
+<button (click) = toggleSTyle()>change class</button>
+
+
