@@ -1,0 +1,9 @@
+<h2> Employee Details </h2>
+
+<ul>
+@for (item of emp | async ; track item.id) {
+    <li> 
+        {{item.id}}. {{item.name}} - {{item.age}}
+    </li>
+}
+</ul>

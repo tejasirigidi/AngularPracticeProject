@@ -9,6 +9,7 @@ import { EditUser } from './edit-user/edit-user';
   declarations: [
     EditUser
   ],
+  providers:[],
   imports: [
     CommonModule,
     AdminRoutingModule
